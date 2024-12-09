@@ -215,10 +215,7 @@ function VersusPath:StartMovement(FinishPosition: Vector3|CFrame)
 	end
 	-- wait until stop running
 end
-function VersusPath.new(
-	Character: Model|Player, 
-	PathParams: {}, 
-	MoveParams:{Debug:boolean,DebugDisplay: {WayGenerationFail: boolean,MoveTimeOut: boolean,MovementFinished: boolean,SetupMovementFail: boolean,},MaxMoveTime:number,VizualizePath:boolean, VizualizePathSettings:{WaypointTimeout: number,StepByStepGeneration: boolean,BreakWaypointAfterComplete: boolean, RemoveAfterFinish:boolean,TweenSpawn: boolean, Part_Settings: {},TweenSettings: {TweenInfo:TweenInfo,Properties:{}}}}?)
+function VersusPath.new(Character: Model|Player, PathParams: {}, MoveParams:{Debug:boolean,DebugDisplay: {WayGenerationFail: boolean,MoveTimeOut: boolean,MovementFinished: boolean,SetupMovementFail: boolean,},MaxMoveTime:number,VizualizePath:boolean, VizualizePathSettings:{WaypointTimeout: number,StepByStepGeneration: boolean,BreakWaypointAfterComplete: boolean, RemoveAfterFinish:boolean,TweenSpawn: boolean, Part_Settings: {},TweenSettings: {TweenInfo:TweenInfo,Properties:{}}}}?)
 	local self = setmetatable({}, VersusPath)
 	if typeof(Character) == 'Player' then
 		if not Character.Character then
